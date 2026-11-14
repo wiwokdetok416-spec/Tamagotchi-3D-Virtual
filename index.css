@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    overflow-x: hidden;
+    background-color: #0f172a;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Fredoka', 'Nunito', cursive, sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbars for markdown and menus */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.5);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.8);
+}
+
+/* Tactile button pressed effect */
+.btn-tactile {
+  transition: all 0.08s ease;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.18);
+}
+.btn-tactile:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.18);
+}
+
+/* Custom markdown rendering styles */
+.markdown-body {
+  line-height: 1.6;
+}
+.markdown-body h1 {
+  font-family: 'Fredoka', cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.25rem;
+}
+.markdown-body h2 {
+  font-family: 'Fredoka', cursive;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0.875rem;
+  margin-bottom: 0.375rem;
+  color: #334155;
+}
+.markdown-body h3 {
+  font-family: 'Fredoka', cursive;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  color: #475569;
+}
+.markdown-body p {
+  margin-bottom: 0.75rem;
+}
+.markdown-body ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.markdown-body ol {
+  list-style-type: decimal;
+  margin-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.markdown-body li {
+  margin-bottom: 0.25rem;
+}
+.markdown-body blockquote {
+  border-left: 4px solid #f59e0b;
+  padding-left: 0.75rem;
+  color: #64748b;
+  font-style: italic;
+  margin: 0.75rem 0;
+  background-color: #fffbeb;
+  border-radius: 0 0.375rem 0.375rem 0;
+  padding: 0.5rem 0.75rem;
+}
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  font-size: 0.875rem;
+}
+.markdown-body th, .markdown-body td {
+  border: 1px solid #cbd5e1;
+  padding: 0.375rem 0.5rem;
+  text-align: left;
+}
+.markdown-body th {
+  background-color: #f1f5f9;
+  font-weight: 700;
+}
+.markdown-body code {
+  background-color: #f1f5f9;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  font-size: 0.85em;
+  color: #e11d48;
+}
+.markdown-body pre {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+}
+.markdown-body hr {
+  margin: 1rem 0;
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+}

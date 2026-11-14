@@ -1,0 +1,8 @@
+{
+  "name": "Tamagotchi 3D Virtual Pet: Milo, Fizzi & Ngkur",
+  "description": "Game virtual pet 3D yang ringan, imut, dan interaktif dengan grafis memukau. Pelihara Milo si anjing penurut, Fizzi si ikan cupang, atau Ngkur si kucing manis dan pemberani secara offline.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
